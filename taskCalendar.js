@@ -1,9 +1,14 @@
-let day = "Wednesday";
-console.log("Enter a day of the week: " + day);
-switch(day){
+//this function allows a prompt 
+const ps = require("prompt-sync");
+const prompt =ps();
+
+let day = prompt("Enter a day of the week: ");
+
+//helps switch to different potential outcomes
+switch(day){ 
     case "Monday":
         console.log("Your task for Monday is: to Clean the house");
-        break;
+        break; //breaks the switch block
     case "Tuesday":
         console.log("Your task for Tuesday is: to Code a program");
         break;
@@ -22,6 +27,6 @@ switch(day){
     case "Sunday":
         console.log("Your task for Sunday is: to Rest");
         break;
-    default:
-        console.log("Your input is invalid.");
+    default: 
+        console.log("Your input is invalid please enter a day of the week.");
 }  
